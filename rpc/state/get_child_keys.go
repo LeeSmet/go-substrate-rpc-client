@@ -17,8 +17,8 @@
 package state
 
 import (
-	"github.com/snowfork/go-substrate-rpc-client/client"
-	"github.com/snowfork/go-substrate-rpc-client/types"
+	"github.com/leesmet/go-substrate-rpc-client/client"
+	"github.com/leesmet/go-substrate-rpc-client/types"
 )
 
 // GetChildKeys retreives the keys with the given prefix of a specific child storage

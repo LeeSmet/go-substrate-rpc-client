@@ -20,7 +20,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	. "github.com/snowfork/go-substrate-rpc-client/types"
+	. "github.com/leesmet/go-substrate-rpc-client/types"
 )
 
 func TestAddress_EncodeDecode(t *testing.T) {

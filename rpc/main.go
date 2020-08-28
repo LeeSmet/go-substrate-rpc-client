@@ -17,12 +17,12 @@
 package rpc
 
 import (
-	"github.com/snowfork/go-substrate-rpc-client/client"
-	"github.com/snowfork/go-substrate-rpc-client/rpc/author"
-	"github.com/snowfork/go-substrate-rpc-client/rpc/chain"
-	"github.com/snowfork/go-substrate-rpc-client/rpc/state"
-	"github.com/snowfork/go-substrate-rpc-client/rpc/system"
-	"github.com/snowfork/go-substrate-rpc-client/types"
+	"github.com/leesmet/go-substrate-rpc-client/client"
+	"github.com/leesmet/go-substrate-rpc-client/rpc/author"
+	"github.com/leesmet/go-substrate-rpc-client/rpc/chain"
+	"github.com/leesmet/go-substrate-rpc-client/rpc/state"
+	"github.com/leesmet/go-substrate-rpc-client/rpc/system"
+	"github.com/leesmet/go-substrate-rpc-client/types"
 )
 
 type RPC struct {

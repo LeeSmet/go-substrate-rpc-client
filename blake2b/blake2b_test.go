@@ -3,7 +3,7 @@ package blake2b_test
 import (
 	"testing"
 
-	. "github.com/snowfork/go-substrate-rpc-client/blake2b"
+	. "github.com/leesmet/go-substrate-rpc-client/blake2b"
 	"github.com/stretchr/testify/assert"
 )
 

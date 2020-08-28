@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	gsrpc "github.com/snowfork/go-substrate-rpc-client"
-	"github.com/snowfork/go-substrate-rpc-client/config"
-	"github.com/snowfork/go-substrate-rpc-client/signature"
-	"github.com/snowfork/go-substrate-rpc-client/types"
+	gsrpc "github.com/leesmet/go-substrate-rpc-client"
+	"github.com/leesmet/go-substrate-rpc-client/config"
+	"github.com/leesmet/go-substrate-rpc-client/signature"
+	"github.com/leesmet/go-substrate-rpc-client/types"
 	"github.com/stretchr/testify/assert"
 )
 

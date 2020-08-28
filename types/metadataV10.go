@@ -22,9 +22,9 @@ import (
 	"hash"
 	"strings"
 
-	"github.com/snowfork/go-substrate-rpc-client/blake2b"
-	"github.com/snowfork/go-substrate-rpc-client/scale"
-	"github.com/snowfork/go-substrate-rpc-client/xxhash"
+	"github.com/leesmet/go-substrate-rpc-client/blake2b"
+	"github.com/leesmet/go-substrate-rpc-client/scale"
+	"github.com/leesmet/go-substrate-rpc-client/xxhash"
 )
 
 // Modelled after packages/types/src/Metadata/v10/Metadata.ts

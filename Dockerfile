@@ -61,8 +61,8 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 WORKDIR $GOPATH
 
-RUN mkdir -p $GOPATH/src/github.com/snowfork/go-substrate-rpc-client
-WORKDIR $GOPATH/src/github.com/snowfork/go-substrate-rpc-client
+RUN mkdir -p $GOPATH/src/github.com/leesmet/go-substrate-rpc-client
+WORKDIR $GOPATH/src/github.com/leesmet/go-substrate-rpc-client
 COPY . .
 
 # Ensuring Subkey is available

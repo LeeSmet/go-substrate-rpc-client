@@ -17,7 +17,7 @@
 package types
 
 import (
-	"github.com/snowfork/go-substrate-rpc-client/scale"
+	"github.com/leesmet/go-substrate-rpc-client/scale"
 )
 
 // Null is a type that does not contain anything (apart from null)
