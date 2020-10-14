@@ -15,6 +15,7 @@
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
 // +build darwin dragonfly freebsd linux nacl netbsd openbsd solaris
+// +build cgo
 
 package rpc
 
