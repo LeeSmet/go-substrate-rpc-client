@@ -54,7 +54,7 @@ func KeyringPairFromSecret(seedOrPhrase, network string) (KeyringPair, error) {
 	if network != "" {
 		args = []string{"--network", network}
 	}
-	args = append([]string{"inspect", "--output-type", "Json", seedOrPhrase}, args...)
+	args = append([]string{"inspect", "--scheme", "Ed25519", "--output-type", "Json", seedOrPhrase}, args...)
 
 	// use "subkey" command for creation of public key and address
 	cmd := exec.Command(subkeyCmd, args...)
@@ -104,7 +104,7 @@ func Sign(data []byte, privateKeyURI string) ([]byte, error) {
 	}
 
 	// use "subkey" command for signature
-	cmd := exec.Command(subkeyCmd, "sign", "--suri", privateKeyURI, "--hex")
+	cmd := exec.Command(subkeyCmd, "sign", "--scheme", "Ed25519", "--suri", privateKeyURI, "--hex")
 
 	// data to stdin
 	dataHex := hex.EncodeToString(data)
@@ -143,7 +143,7 @@ func Verify(data []byte, sig []byte, privateKeyURI string) (bool, error) {
 	sigHex := hex.EncodeToString(sig)
 
 	// use "subkey" command for signature
-	cmd := exec.Command(subkeyCmd, "verify", "--hex", sigHex, privateKeyURI)
+	cmd := exec.Command(subkeyCmd, "verify", "--scheme", "Ed25519", "--hex", sigHex, privateKeyURI)
 
 	// data to stdin
 	dataHex := hex.EncodeToString(data)
